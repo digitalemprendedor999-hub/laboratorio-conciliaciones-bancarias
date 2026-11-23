@@ -1,13 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<title>Laboratorio de Conciliaciones Bancarias</title>
+    <meta charset="UTF-8">
+
+    <title>Laboratorio de Conciliaciones Bancarias</title>
+
+    <style>
+
+        body{
+            background:#1e1e1e;
+            color:white;
+            font-family:Arial;
+            margin:20px;
+        }
+
+        h1{
+            text-align:center;
+            color:#f5f5f5;
+        }
+
+        h2{
+            border-bottom:1px solid #555;
+            padding-bottom:5px;
+            margin-top:30px;
+        }
+
+        .panel{
+            background:#2a2a2a;
+            padding:15px;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        th{
+            background:#333;
+            padding:10px;
+        }
+
+        td{
+            border:1px solid #555;
+            padding:8px;
+        }
+
+        .anexo{
+            background:#333;
+            padding:10px;
+            margin-top:10px;
+            border-radius:5px;
+        }
+
+    </style>
+
 </head>
+
 <body>
 
 <h1>LABORATORIO DE CONCILIACIONES BANCARIAS</h1>
 
-<p>Primera versión funcionando.</p>
+<div class="panel">
+
+    <h2>Información General</h2>
+
+    <p><b>Empresa:</b> Practicando Se Aprende SRL</p>
+    <p><b>Banco:</b> Banreservas</p>
+    <p><b>Cuenta:</b> 723423477</p>
+    <p><b>Moneda:</b> DOP</p>
+    <p><b>Período:</b> Enero 2027</p>
+
+</div>
+
+<div class="panel">
+
+    <h2>Validación de Saldos</h2>
+
+    <p>Saldo Final según Estado Bancario</p>
+
+    <input type="number">
+
+    <p>Saldo Final según Libro Banco Empresa</p>
+
+    <input type="text" value="326800.00">
+
+</div>
+
+<div class="panel">
+
+    <h2>Libro Banco Empresa</h2>
+
+    <table>
+
+        <tr>
+            <th>Documento</th>
+            <th>Tipo</th>
+            <th>Monto</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr>
+            <td>DP-13</td>
+            <td>DP</td>
+            <td>90,000</td>
+            <td>PENDIENTE</td>
+        </tr>
+
+        <tr>
+            <td>TB-14</td>
+            <td>TB</td>
+            <td>40,000</td>
+            <td>PENDIENTE</td>
+        </tr>
+
+        <tr>
+            <td>TB-15</td>
+            <td>TB</td>
+            <td>38,000</td>
+            <td>PENDIENTE</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="panel">
+
+    <h2>Estado Bancario</h2>
+
+    <table>
+
+        <tr>
+            <th>Documento</th>
+            <th>Tipo</th>
+            <th>Monto</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr>
+            <td>DEP-01</td>
+            <td>DP</td>
+            <td>90,000</td>
+            <td>PENDIENTE</td>
+        </tr>
+
+        <tr>
+            <td>COM-01</td>
+            <td>COM</td>
+            <td>700</td>
+            <td>PENDIENTE</td>
+        </tr>
+
+        <tr>
+            <td>INT-01</td>
+            <td>INT</td>
+            <td>450.22</td>
+            <td>PENDIENTE</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div class="panel">
+
+<h2>Anexos</h2>
+
+<div class="anexo">
+Anexo 01 - Depósitos en Tránsito
+</div>
+
+<div class="anexo">
+Anexo 02 - Cheques y Transferencias en Tránsito
+</div>
+
+<div class="anexo">
+Anexo 03 - Débitos Pendientes de Registro
+</div>
+
+<div class="anexo">
+Anexo 04 - Créditos Pendientes de Registro
+</div>
+
+</div>
 
 </body>
+
 </html>
